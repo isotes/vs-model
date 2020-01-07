@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xb:config xmlns:xb="http://xml.apache.org/xmlbeans/2004/02/xbean/config"
+           xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <xb:namespace uri="http://schemas.microsoft.com/developer/msbuild/2003">
+        <xb:package>io.github.isotes.vs.model</xb:package>
+    </xb:namespace>
+
+</xb:config>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/developer/msbuild/2003"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003"
+           elementFormDefault="qualified">
+
+<!--	<xs:include schemaLocation="Microsoft.Build.CommonTypes.xsd"/>-->
+
+	<!--
+	In library projects there is usually a Lib section next to ClCompile and Link in an ItemDefinitionGroup. This seems
+	to be missing from the upstream schema. The example contents I've seen seem to be covered by the LinkItem type.
+	-->
+<!--	<xs:element name="Lib" substitutionGroup="msb:Item">-->
+<!--		<xs:complexType>-->
+<!--			<xs:complexContent>-->
+<!--				<xs:extension base="msb:LinkItem">-->
+<!--				</xs:extension>-->
+<!--			</xs:complexContent>-->
+<!--		</xs:complexType>-->
+<!--	</xs:element>-->
+
+	<xs:redefine schemaLocation="Microsoft.Build.CommonTypes.xsd">
+		<xs:complexType name="ItemDefinitionGroupType">
+			<xs:complexContent>
+				<xs:extension base="msb:ItemDefinitionGroupType">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element name="Lib" type="msb:LinkItem" />
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:redefine>
+
+</xs:schema>
