@@ -1,4 +1,4 @@
-# vs-model
+# vs-model  [![License](https://img.shields.io/github/license/isotes/vs-model)](LICENSE)  [![Build Status](https://travis-ci.com/isotes/vs-model.svg?branch=master)](https://travis-ci.com/isotes/vs-model)  [![Javadoc](https://img.shields.io/badge/docs-javadoc-blue)](https://isotes.github.io/javadoc/vs-model-1.0.0/)  [![Maven Central](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Frepo1.maven.org%2Fmaven2%2Fio%2Fgithub%2Fisotes%2Fvs-model%2Fmaven-metadata.xml)](https://search.maven.org/search?q=g:io.github.isotes%20a:vs-model)
 Generated [XMLBeans](https://xmlbeans.apache.org/) Java classes for the XML schema of [MSBuild](https://github.com/microsoft/msbuild) project files.
 
 
